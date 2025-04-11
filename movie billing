@@ -1,0 +1,14 @@
+total = 0
+people = int(input("How many tickets do you want to buy? "))
+
+for i in range(people):
+    person = input(f"Is person {i+1} an adult or child? ").lower()
+    if person == "adult":
+        total += 150
+    elif person == "child":
+        total += 100
+    else:
+        print("Invalid input.")
+
+print("Total ticket cost: ₹", total)
+
