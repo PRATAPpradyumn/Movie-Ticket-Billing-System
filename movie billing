@@ -1,14 +1,18 @@
-total = 0
-people = int(input("How many tickets do you want to buy? "))
-
-for i in range(people):
-    person = input(f"Is person {i+1} an adult or child? ").lower()
-    if person == "adult":
-        total += 150
-    elif person == "child":
-        total += 100
-    else:
-        print("Invalid input.")
-
-print("Total ticket cost: ₹", total)
+total = 0 
+x = int(input("How many tickets you want to purchase? "))
+for i in range(x):
+  person = input(f"is the person{i+1} child or adult ? ").lower()
+  if person == "child" or person == "c":
+    total += 100
+  elif person == "adult" or person == "a":
+    total += 150
+  else:
+    print("atta maji satak li")
+  snack = input("do you want popcorn if yes press 'y' else press 'n' ").lower()
+  if snack == "y":
+    total += 200
+  else:
+    print("you havn't decided to choose popcorn")
+print("your total would be", total)
+print("thank you")
 
